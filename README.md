@@ -31,7 +31,7 @@ The Uformer paper contributes to the field of image restoration by introducing a
 Clone the project
 
 ```bash
-  git clone [https://github.com/githin27/DIAG_NN_UFORMER]
+  git clone https://github.com/githin27/DIAG_NN_UFORMER
 ```
 
 Go to the project directory & install dependencies
