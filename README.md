@@ -43,7 +43,7 @@ Go to the project directory & install dependencies
 # Deployment
 
 To deploy the model, go to deployment directory and load a noisy or blur image to the directory image_in.  
-The pretrained weights path can be downloaded from [here](https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link) and load it to the models directory.
+The pretrained weights can be downloaded from [here](https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link) and load it to the models directory.
 
 ```bash
   cd deploymment 
@@ -51,7 +51,7 @@ The pretrained weights path can be downloaded from [here](https://drive.google.c
 
 For image restoration run
 ```bash
-cripts\image_restoration.sh
+sh scripts\image_restoration.sh
 ```
 Comment or uncomment the script based your choise of operation 
 
@@ -77,11 +77,15 @@ For the implementation of the model, go to development directory and run all fro
 
 ## Data Preparation
 
+*Note: For the purose of easiness, i have placed the necessary datasets for both denoise and deblur with train, validation, test datasets abd each dataset contains a number of 40 images.  Either you can use the existing datasets or you can create your own by foloowing the instructions below.
+
+
 ### Denoising
 For training data of SIDD, you can download the SIDD-Medium dataset from the [official url](https://www.eecs.yorku.ca/~kamel/sidd/dataset.php).
 Then generate training patches for training by:
 ```python
-python3 generate_patches_SIDD.py --src_dir ../SIDD_Medium_Srgb/Data --tar_dir ../datasets/denoising/sidd/train
+python3 custom_dataset_deblur.py --src_dir ../SIDD_Medium_Srgb/Data --tar_dir ../datasets/deblur/GoPro/customized_datatset/train
+python3 custom_dataset_denoise.py --src_dir ../GoPro/treain --tar_dir ../datasets/denoising/SIDD/customized_dataset/train
 ```
 
 For evaluation on SIDD, you can download data from [here](https://mailustceducn-my.sharepoint.com/personal/zhendongwang_mail_ustc_edu_cn/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fzhendongwang%5Fmail%5Fustc%5Fedu%5Fcn%2FDocuments%2FUformer%2Fdatasets%2FSIDD).
