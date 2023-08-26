@@ -1,0 +1,3 @@
+Download the pretrained weights for the model from the given link and add both the files to this directory(model)
+
+https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link
