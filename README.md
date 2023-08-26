@@ -43,7 +43,7 @@ Go to the project directory & install dependencies
 # Deployment
 
 To deploy the model, go to deployment directory and load a noisy or blur image to the directory image_in.  
-The pretrained weights path can be downloaded from (here)[https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link] and load it to the models directory.
+The pretrained weights path can be downloaded from [here](https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link) and load it to the models directory.
 
 ```bash
   cd deploymment 
