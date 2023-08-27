@@ -70,9 +70,7 @@ For the implementation of the model, go to development directory and run all fro
 ````
 
 ## Pretrained Model
-
-- Uformer_B: [SIDD](https://mailustceducn-my.sharepoint.com/:u:/g/personal/zhendongwang_mail_ustc_edu_cn/Ea7hMP82A0xFlOKPlQnBJy0B9gVP-1MJL75mR4QKBMGc2w?e=iOz0zz) |
-[GoPro](https://mailustceducn-my.sharepoint.com/:u:/g/personal/zhendongwang_mail_ustc_edu_cn/EfCPoTSEKJRAshoE6EAC_3YB7oNkbLUX6AUgWSCwoJe0oA?e=jai90x)
+The pretrained model for both SIDD and GoPro can be downloaded from [here](https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link) and load 
 
 
 ## Data Preparation
