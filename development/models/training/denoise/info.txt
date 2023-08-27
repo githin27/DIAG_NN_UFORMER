@@ -1,1 +1,1 @@
-Download your deblur trained model to here
+this directory is created for saving the best_model path when training the model for debluring
