@@ -43,7 +43,7 @@ Go to the project directory & install dependencies
 # Deployment
 
 To deploy the model, go to deployment directory and load a noisy or blur image to the directory image_in.  
-The pretrained weights can be downloaded from [here](https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link) and load it to the models directory.
+The pretrained weights can be downloaded from [here](https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link) and load it to the model directory.
 
 ```bash
   cd deploymment 
@@ -77,7 +77,7 @@ For the implementation of the model, go to development directory and run all fro
 
 ## Data Preparation
 
-*Note: For the purose of easiness, i have placed the necessary datasets for both denoise and deblur with train, validation, test datasets abd each dataset contains a number of 40 images.  Either you can use the existing datasets or you can create your own by foloowing the instructions below.
+**Note: For the purose of easiness, i have placed the necessary datasets for both denoise and deblur with train, validation and test datasets with each dataset contains a number of 40 images.  Either you can use the existing datasets or you can create your own by foloowing the instructions below.**
 
 
 ### Denoising
