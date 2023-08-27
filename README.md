@@ -82,20 +82,18 @@ _Note:_ If you are creating your own dataset, please do remember to delete all t
 
 
 ### Denoising
-For training data of SIDD, you can download the SIDD-Medium dataset from the [official url](https://www.eecs.yorku.ca/~kamel/sidd/dataset.php).
-Then generate training patches for training by:
-```python
-python3 custom_dataset_deblur.py --src_dir ../SIDD_Medium_Srgb/Data --tar_dir ../datasets/deblur/GoPro/customized_datatset/train
-python3 custom_dataset_denoise.py --src_dir ../GoPro/treain --tar_dir ../datasets/denoising/SIDD/customized_dataset/train
+For denoising, the dataset SIDD, can be download from the SIDD-Medium dataset from the [official url](https://www.eecs.yorku.ca/~kamel/sidd/dataset.php), and load the dataset to the development directory.  
+Then generate train, validation, test patches on SIDD dataset for denoising, run:
+```sh
+  sh scripts/custom_dataset_denoise.sh
 ```
 
-For evaluation on SIDD, you can download data from [here](https://mailustceducn-my.sharepoint.com/personal/zhendongwang_mail_ustc_edu_cn/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fzhendongwang%5Fmail%5Fustc%5Fedu%5Fcn%2FDocuments%2FUformer%2Fdatasets%2FSIDD).
-
-
 ### Deblurring
-For training and evaluation on GoPro, you can download data from [here](https://mailustceducn-my.sharepoint.com/personal/zhendongwang_mail_ustc_edu_cn/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fzhendongwang%5Fmail%5Fustc%5Fedu%5Fcn%2FDocuments%2FUformer%2Fdatasets%2FGoPro).  
-Then put all the denoising data into `../datasets/denoising`, and all the deblurring data into `../datasets/deblurring`.
-
+For debluring on GoPro, you can download data from [here](https://mailustceducn-my.sharepoint.com/personal/zhendongwang_mail_ustc_edu_cn/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fzhendongwang%5Fmail%5Fustc%5Fedu%5Fcn%2FDocuments%2FUformer%2Fdatasets%2FGoPro), and load the dataset to the development directory.   
+Then generate train, validation, test patches on GoPro dataset for debluring, run:
+```sh
+  sh scripts/custom_dataset_deblur.sh
+```
 ## Training
 
 To train Uformer on SIDD for Denoising and on GoPro for Deblurring:
