@@ -11,7 +11,7 @@ python ./generate_patch/custom_dataset_denoise.py \
 read -p "Press Enter to exit..."
 
 """
-creating validation dataset
+#creating validation dataset
 python ./generate_patch/custom_dataset_deoise.py \
     --patch_src ./SIDD_Medium_Srgb/Data \
     --patch_tar ./datasets/denoise/SIDD/customized_dataset/ \
@@ -20,7 +20,7 @@ python ./generate_patch/custom_dataset_deoise.py \
     --num_cores 8
 
 
-creating test dataset
+#creating test dataset
 python ./generate_patch/custom_dataset_denoise.py \
     --patch_src ./SIDD_Medium_Srgb/Data \
     --patch_tar ./datasets/denoise/SIDD/customized_dataset/ \
