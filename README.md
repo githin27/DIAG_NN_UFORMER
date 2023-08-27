@@ -77,7 +77,7 @@ For the implementation of the model, go to development directory and run all fro
 
 ## Data Preparation
 
-For the purose of easiness, i have placed the necessary datasets for both denoise and deblur having train, validation and test datasets with each dataset contains a number of 40 images.  Either you can use the existing datasets or you can create your own by foloowing the instructions below.  
+For the purose of easiness, i have placed the necessary datasets for both denoise and deblur having train, validation and test datasets with each dataset contains a number of 40 images.  Either you can use the existing datasets or you can create your own by following the instructions below.  
 _Note:_ If you are creating your own dataset, please do remember to delete all the data from the directory datasets.
 
 
