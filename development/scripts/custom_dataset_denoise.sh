@@ -3,32 +3,29 @@
 #creating train dataset
 python ./generate_patch/custom_dataset_denoise.py \
     --patch_src ./SIDD_Medium_Srgb/Data \
-    --patch_tar ./datasets/rough/denoise/ \
+    --patch_tar ./datasets/denoise/SIDD/customized_dataset/ \
     --ps 128 \
-    --num_patches 10 \
-    --num_cores 2
+    --num_patches 50 \
+    --num_cores 8
     
 read -p "Press Enter to exit..."
 
-
 """
 creating validation dataset
-python ./generate_patch/custom_dataset_deblur.py \
-    --patch_src_gt ./rough_GoPro/train/groundtruth/ \
-    --patch_src_in ./rough_GoPro/train/input/ \
-    --patch_tar ./datasets/rough/deblur/val \
-    --ps 64 \
-    --num_patches 5 \
-    --num_cores 2
+python ./generate_patch/custom_dataset_deoise.py \
+    --patch_src ./SIDD_Medium_Srgb/Data \
+    --patch_tar ./datasets/denoise/SIDD/customized_dataset/ \
+    --ps 128 \
+    --num_patches 20 \
+    --num_cores 8
 
 
 creating test dataset
-python ./generate_patch/custom_dataset_deblur.py \
-    --patch_src_gt ./rough_GoPro/train/groundtruth/ \
-    --patch_src_in ./rough_GoPro/train/input/ \
-    --patch_tar ./datasets/rough/deblur \
-    --ps 64 \
-    --num_patches 5 \
-    --num_cores 2
+python ./generate_patch/custom_dataset_denoise.py \
+    --patch_src ./SIDD_Medium_Srgb/Data \
+    --patch_tar ./datasets/denoise/SIDD/customized_dataset/ \
+    --ps 128 \
+    --num_patches 20 \
+    --num_cores 8
 """
 
