@@ -70,7 +70,7 @@ For the implementation of the model, go to development directory and run all fro
 ````
 
 ## Pretrained Model
-The pretrained model for both SIDD and GoPro can be downloaded from [here](https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=drive_link) and load the model to the directory ./models/pretrained/ .
+The pretrained model for both SIDD and GoPro can be downloaded from [here](https://drive.google.com/drive/folders/1CFs1DY1U2s3sNxJIgeFZJzn8IoLvpXeG?usp=sharing) and load the model to the directory ./models/pretrained/ .
 
 
 ## Data Preparation
